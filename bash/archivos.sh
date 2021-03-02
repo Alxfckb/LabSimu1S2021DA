@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Autor:    Alexander Alvarado
+#Autor:    Alexander Alvarado (TW: @alxfckb)
 #Tipo:     Script de Bash
 #Ejecutar  ./generadorarchivo.sh
 #Resumen   Generador automático de comentario para scripts de C.
@@ -15,7 +15,7 @@ if [ -z $nombre ]; then
 	echo "no ingresó un nombre válido"
 	exit 2
 fi
-#obtener informacióndel sistema
+#obtener información del sistema
 author=$(whoami)
 fecha=$(date)
 version=$(gcc --version | head -n 1)
