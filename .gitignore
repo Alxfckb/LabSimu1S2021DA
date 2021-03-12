@@ -1,3 +1,4 @@
-*.EXEC
-**/.DS_Store
+.EXEC
+/.DS_Store
 elementos.txt
+*.out
