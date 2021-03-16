@@ -1,5 +1,4 @@
 .EXEC
-.DS_Store
 elementos.txt
 *.out
 *.swp
