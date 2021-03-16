@@ -1,5 +1,5 @@
 .EXEC
-/.DS_Store
+**/.DS_Store
 elementos.txt
 *.out
 
