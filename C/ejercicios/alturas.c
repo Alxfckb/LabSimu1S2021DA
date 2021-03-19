@@ -12,11 +12,11 @@ salidas: media, max, min (todas float)
 #include <stdio.h>
 int main(){
     //Declarar e inicializar variables
-    float media=0, max=0, min=0, n=0,x, cmin;
-
+    float media=0, max=0, min=0,x;
+    int n=0;
     //Entrar a un bucle infinito 
     for(;;){
-
+        
         //Pedir una altura en terminal
         printf("Ingrese una altura: ");
         scanf("%f", &x);
@@ -45,8 +45,8 @@ int main(){
         }else{
             //Imprimir la información recolectada y terminar el ciclo si detectamos un negativo
             printf("Media: %f, máximo %f, mínimo %f", media/n, max, min); 
-            break;
-        }
+            
+        }break;
     }
 return 0;
 }
