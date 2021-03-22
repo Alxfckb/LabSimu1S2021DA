@@ -25,10 +25,10 @@ int main(){
         //Loop infinito para encontrar divisores del número ingresado
         for(;;){
             
-
+            //Primer filtro para números que actualmente son considerados primos
             if(i<n-1 && p==1){
                
-               //Si es divisor de n 
+               //Verificar si i es divisor de n 
                if(n%i==0){
                    p=0;
                    i++;
@@ -38,7 +38,7 @@ int main(){
 
                }
             }
-
+            //Mostrar al usuario si el número ingresado es o no primo
             else{
                 if(p==0){
         

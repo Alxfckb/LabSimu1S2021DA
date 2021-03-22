@@ -14,7 +14,7 @@ salidas: p (int)
 int n1, n2, p, i, j;
 
 int es_primo(x){
-/*Esta función recibe un número entero y determina si es primo
+/*Esta función recibe un número entero y determina si es primo, está más detallada en el archivo
  */
     j=2;
     p=1;
@@ -42,20 +42,27 @@ int es_primo(x){
         }
 
     }
+//Devolver 1 o 0, dependiendo si el número es o no primo
 return p;
 }
 
 int main(){
    
+   //Pedir dos números enteros en terminal
    printf("Ingrese un número entero: ");
    scanf("%d", &n1);
    printf("Ingrese otro número entero: ");
    scanf("%d", &n2);
-     
+   
+   //Mostrar El intervalo
    printf("Los números primos entre %d y %d son: \n", n1, n2);
+   
+   //Verificar cada uno de los números del intervalo
    for(i=n1; i<=n2; i++){
  
+           //Verificar si el número actual es primo
            if(es_primo(i)==1){
+               //Imprimir si es primo
                printf("%d \n",i);
                 
            }
