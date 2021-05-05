@@ -4,10 +4,11 @@ Complilador:  Apple clang version 12.0.0 (clang-1200.0.32.29)
 Para comilar: gcc -o vector vector.c
 Fecha:  Sat Apr 17 15:57:50 CST 2021
 librerias:  stdio.h
-resumen: Se solicita que el usuario ingrese 10 números pares entre 2 y 20.
-Rechaza números incorrectos y solicita otro hasta obtener uno correcto.
-entradas: números pares entre 2 y 20
-salidas: Un vector de longitud 10
+resumen: Se solicita al usuario que ingrese 5 números enteros. Estos se
+almacenarán en un vector y al terminar de ingresar los números, se mostrará el vector ordenado de forma ascendente en terminal.
+
+entradas: cinco números enteros
+salidas: Un vector de longitud 5
 */
 
 

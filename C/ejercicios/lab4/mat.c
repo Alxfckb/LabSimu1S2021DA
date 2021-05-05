@@ -25,12 +25,13 @@ int matA[3][3]={};
 int matB[3][3]={};
 int tmatB[3][3]={};
 int sum[3][3]={};
+int res[3][3]={};
 int multi[3][3]={};
 int aMatA[3][3]={};
 int det;
 
 
-int i, j,n,ent;
+int i, j,n ,ent;
 
 void pedir(){
   /*
@@ -85,6 +86,17 @@ void suma(){
   for(i=0; i<3;i++){
     for(j=0; j<3;j++){
       sum[i][j]=matA[i][j]+matB[i][j];
+    }
+  }
+}
+
+void resta(){
+  /*
+  Esta función hace la suma de dos matrices
+  */
+  for(i=0; i<3;i++){
+    for(j=0; j<3;j++){
+      res[i][j]=matA[i][j]-matB[i][j];
     }
   }
 }
@@ -144,14 +156,21 @@ int main(void){
   printmat(sum);
   printf("\n");
 
+  printf("Matriz A-B: \n");
+  resta();
+  printmat(res);
+  printf("\n");
+
   printf("Matriz AxB: \n");
   prod();
   printmat(multi);
   printf("\n");
+
   printf("Matriz B^T: \n");
   tras();
   printmat(tmatB);
   printf("\n");
+  
   printf("Det(matriz A): \n");
   determinante();
 

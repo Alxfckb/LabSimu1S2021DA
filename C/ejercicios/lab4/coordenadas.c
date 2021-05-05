@@ -113,7 +113,6 @@ Función que calcula el producto cruz entre dos vectores, almacena el resultado
 }
 
 
-
 int main(void){
   pedir();
   mag();
