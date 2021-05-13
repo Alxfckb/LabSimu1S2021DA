@@ -48,7 +48,7 @@ int main(void){
     ficha("Chac",2.5E7, 2.248E-4, 70.25, 215,1.8E5, 2.1E6);
     gas("Chac",2.5E7, 2.248E-4, 70.25, 215,1.8E5, 2.1E6);
     printf("\n");
-  
+
 }
 
 //Masa final
@@ -134,7 +134,8 @@ void gas(char name[10],float e0, float tsfc, float cd, float a, float m0, float 
      y+=v*t;
 
     }
-    printf("El cohete %s se quedó sin combustible en t=%.2f\n",name,t);
+    printf("El cohete %s se quedó sin combustible en t=%.2f s\n",name,t);
+    printf("Altura máxima en y=%.2fm\n",y);
 }
 
 //NO CORRER ESTA FUNCIÓN
